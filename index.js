@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NzM1NDM1NzA4NjI5NjQ3Mzcx.XxgOEA.51xgwEs29g5MBMfr9lx23x7OpkM';
 
 const PREFIX = "!";
 var version = "1.0.1"
@@ -216,4 +215,4 @@ bot.on('message', message=>{
 
 })
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
